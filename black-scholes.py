@@ -8,7 +8,7 @@ Risk Free Rate (r):     The constant rate of return on a risk-free asset, such a
 Volatility (σ):         A measure of how much the price of the underlying asset fluctuates.
 """
 
-
+# Use PIP install scipy to import scipy if not already installed
 import math
 from scipy.stats import norm
 
