@@ -9,10 +9,12 @@ vol = 0.1 # Volatility (σ)
 
 d1 = (math.log(S/K) + (r + 0.5 * vol**2)*T ) / (vol * math.sqrt(T))
 
-d2 = d1 - (vol * math.sqrt(T))\
+d2 = d1 - (vol * math.sqrt(T))
 
+# Call
 C = S * norm.cdf(d1) - K * math.exp(-r * T) * norm.cdf(d2)
 
+# Put
 P = K * math.exp(-r * T) * norm.cdf(-d2) - S * norm.cdf(-d1)
 
 print('The value of d1 is: ', round(d1, 4))
